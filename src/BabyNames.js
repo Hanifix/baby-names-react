@@ -1,17 +1,14 @@
-import React from 'react'
-
+import React from "react";
 
 function BabyNames(props) {
-    // console.log('this is props' + props);
-    return (
-        <div>
-
-            <ul>    
-            <li>{props.item.name}</li> 
-            </ul>
-          
-        </div>
-    )
+  // console.log('this is props' + props);
+  return (
+    <div>
+      <ul>
+        <li key={props.id}className={props.item.name.sex}> {props.item.name}</li>
+      </ul>
+    </div>
+  );
 }
 
-export default BabyNames
+export default BabyNames;
